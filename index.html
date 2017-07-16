@@ -3,14 +3,16 @@
 <head>
     <title>Weather API</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="Stylesheets/style.css" />
     <script type="text/javascript" src="Sripts/weatherjs.js"></script>
 </head>
 <body>
     <h1>Click for Weather of the Cities Below</h1>
-    
-        <button id="London" onclick="LondonWeather()">London Weather</button>
-        <button id="Seattle" onclick="SeattleWeather()">Seattle Weather</button>
-        <button id="MyLocation" onclick="MyLocalWeather()">Get Local Weather</button>
+    <div class="button-collection">
+        <button id="London" class="button-fetch" onclick="LondonWeather()">London Weather</button>
+        <button id="Seattle" class="button-fetch" onclick="SeattleWeather()">Seattle Weather</button>
+        <button id="MyLocation" class="button-fetch" onclick="MyLocalWeather()">Get Local Weather</button>
+    </div>
     <div id="weather-container"></div>
 </body>
 </html>

@@ -1,1 +1,24 @@
 @import "normalize.css";
+@import "variables.scss";
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.button-collection {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-fetch {
+    width: $buttonwidth;
+    height: $buttonheight;
+    margin: $margin;
+}
+
+#weather-container{
+    flex-direction: column;
+    justify-content: center;
+}

@@ -14,7 +14,7 @@ function LondonWeather() {
         let response = JSON.parse(this.response);
        // console.log(response.weather.main);
         displayWeather.innerHTML = `<p>Current Temp: ${response.body.main.temp} degrees Fahrenheit </br>
-                                    Wind Speeed: ${response.body.wind.speed}mph </br>
+                                    Wind Speeed: ${response.body.wind.speed} mph </br>
                                     Current Humidity: ${response.body.main.humidity}%</p>`;
     }
 
@@ -38,7 +38,7 @@ function SeattleWeather() {
         let response = JSON.parse(this.response);
         //console.log(response.weather.description);
         displayWeather.innerHTML = `<p>Current Temp: ${response.body.main.temp} degrees Fahrenheit </br>
-                                    Wind Speeed: ${response.body.wind.speed}mph </br>
+                                    Wind Speeed: ${response.body.wind.speed} mph </br>
                                     Current Humidity: ${response.body.main.humidity}%</p>`;
     }
 
@@ -68,10 +68,10 @@ function myPosition(position) {
 
     myWeatherRequest.onload = function () {
         let response = JSON.parse(this.response);
-        // console.log(response.weather.main);
+        // console.log(response.body.weather.main);
         displayWeather.innerHTML = `<p> Your location is: ${response.body.name}</br>
                                     Current Temp: ${response.body.main.temp} degrees Fahrenheit </br>
-                                    Wind Speeed: ${response.body.wind.speed}mph </br>
+                                    Wind Speeed: ${response.body.wind.speed} mph </br>
                                     Current Humidity: ${response.body.main.humidity}%</p>`;
     }
 
