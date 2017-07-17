@@ -1,6 +1,9 @@
 ﻿$margin: 0 1.25rem 1.25rem;
-$blackbg: #111;
 $buttonheight: 1.25rem;
 $buttonwidth: 11.25rem;
-$textcolor: #ffffff;
 $hoverbuttonhieght: 2rem;
+
+$button-style: ( 
+    london:(#b3ffb3, #00cc00), 
+    seattle:(#99d6ff, #007acc), 
+    geolocation:(#ff3333, #ff9999));

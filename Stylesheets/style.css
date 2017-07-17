@@ -8,7 +8,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  margin-left: 10px; }
+  margin-left: 10px;
+  background-color: azure; }
 
 .button-collection {
   -webkit-box-orient: vertical;
@@ -18,8 +19,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .button-collection:active {
-    font-size: 1.15rem; }
 
 .button-fetch {
   width: 11.25rem;
@@ -36,4 +35,27 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.london {
+  background-color: #b3ffb3, #00cc00, 1;
+  color: #b3ffb3, #00cc00, 3; }
+  .london:hover, .london:focus {
+    background-color: #b3ffb3, #00cc00, 2; }
+  .london:active {
+    background-color: #b3ffb3, #00cc00, 3; }
+
+.seattle {
+  background-color: #99d6ff, #007acc, 1;
+  color: #99d6ff, #007acc, 3; }
+  .seattle:hover, .seattle:focus {
+    background-color: #99d6ff, #007acc, 2; }
+  .seattle:active {
+    background-color: #99d6ff, #007acc, 3; }
+
+.geolocation {
+  background-color: #ff3333, #ff9999, 1;
+  color: #ff3333, #ff9999, 3; }
+  .geolocation:hover, .geolocation:focus {
+    background-color: #ff3333, #ff9999, 2; }
+  .geolocation:active {
+    background-color: #ff3333, #ff9999, 3; }
 /*# sourceMappingURL=style.css.map */
