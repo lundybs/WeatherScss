@@ -30,7 +30,7 @@ body {
     .#{$weather-container} {
         $regular: ($color, 1);
         $hover: ($color, 2);
-        $active: ($color, 3);
+        $active: ($color, 2);
 
         background-color: $regular;
         color: $active;

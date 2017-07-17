@@ -12,7 +12,7 @@ function LondonWeather() {
 
     londonWeatherRequest.onload = function () {
         let response = JSON.parse(this.response);
-       // console.log(response.weather.main);
+        // console.log(response.weather.main);
         displayWeather.innerHTML = `<p>Current Temp: ${response.body.main.temp} degrees Fahrenheit </br>
                                     Wind Speeed: ${response.body.wind.speed} mph </br>
                                     Current Humidity: ${response.body.main.humidity}%</p>`;
@@ -52,7 +52,7 @@ function SeattleWeather() {
 }
 
 function MyLocalWeather() {
-    
+
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(myPosition);
     } else {
@@ -82,4 +82,41 @@ function myPosition(position) {
     }
 
     myWeatherRequest.send();
+}
+
+var map, infoWindow;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 6
+    });
+    infoWindow = new google.maps.InfoWindow;
+
+    // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+        }, function () {
+            handleLocationError(true, infoWindow, map.getCenter());
+        });
+    } else {
+        // Browser doesn't support Geolocation
+        handleLocationError(false, infoWindow, map.getCenter());
+    }
+}
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+    infoWindow.setPosition(pos);
+    infoWindow.setContent(browserHasGeolocation ?
+                                                 'Error: The Geolocation service failed.' :
+                        'Error: Your browser doesn\'t support geolocation.');
+    infoWindow.open(map);
 }

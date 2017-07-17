@@ -37,25 +37,26 @@ body {
 
 .london {
   background-color: #b3ffb3, #00cc00, 1;
-  color: #b3ffb3, #00cc00, 3; }
+  color: #b3ffb3, #00cc00, 2; }
   .london:hover, .london:focus {
     background-color: #b3ffb3, #00cc00, 2; }
   .london:active {
-    background-color: #b3ffb3, #00cc00, 3; }
+    background-color: #b3ffb3, #00cc00, 2; }
 
 .seattle {
   background-color: #99d6ff, #007acc, 1;
-  color: #99d6ff, #007acc, 3; }
+  color: #99d6ff, #007acc, 2; }
   .seattle:hover, .seattle:focus {
     background-color: #99d6ff, #007acc, 2; }
   .seattle:active {
-    background-color: #99d6ff, #007acc, 3; }
+    background-color: #99d6ff, #007acc, 2; }
 
 .geolocation {
   background-color: #ff3333, #ff9999, 1;
-  color: #ff3333, #ff9999, 3; }
+  color: #ff3333, #ff9999, 2; }
   .geolocation:hover, .geolocation:focus {
     background-color: #ff3333, #ff9999, 2; }
   .geolocation:active {
-    background-color: #ff3333, #ff9999, 3; }
+    background-color: #ff3333, #ff9999, 2; }
+
 /*# sourceMappingURL=style.css.map */
