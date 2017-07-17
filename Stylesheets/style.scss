@@ -5,11 +5,16 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    margin-left: 10px;
 }
 
 .button-collection {
     flex-direction: column;
     justify-content: center;
+
+    &:active{
+        font-size:1.15rem;
+    }
 }
 
 .button-fetch {
@@ -18,7 +23,8 @@ body {
     margin: $margin;
 }
 
-#weather-container{
+#weather-container {
+    margin-left: 10px;
     flex-direction: column;
     justify-content: center;
 }

@@ -7,7 +7,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh; }
+  height: 100vh;
+  margin-left: 10px; }
 
 .button-collection {
   -webkit-box-orient: vertical;
@@ -17,6 +18,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .button-collection:active {
+    font-size: 1.15rem; }
 
 .button-fetch {
   width: 11.25rem;
@@ -24,6 +27,7 @@ body {
   margin: 0 1.25rem 1.25rem; }
 
 #weather-container {
+  margin-left: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
